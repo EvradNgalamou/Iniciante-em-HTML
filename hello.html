@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>
+        Meu Primeiro Programa em html
+    </title>
+
+    <!--Este é o CSS-->
+    <style>  
+        .num li {
+            background-color: rgb(255, 187, 0);
+        }
+
+        .num .primo {
+            background-color: red;
+        }
+
+        #negrito {
+            font-weight: bold;
+        }
+
+        #aux li:hover{
+            color: yellow;
+        }
+        
+        #aux {
+            color: red;
+        
+            font-weight: bold;
+
+        }
+        /*
+        #aux .mult3.par {
+            color: black;
+            
+        }*/
+        #aux :not(.pwr2){
+            color: blue;
+        }
+            
+    </style>
+       
+</head>
+    <body>
+        <p>Este é um maratona de HTML para iniciante</p>
+
+        <ul id="negrito">
+            <li style="font-size: 20px">Paragrafo um(1)</li>
+            <li>Paragrafo dois(2)</li>
+            <li style="color: red;">Paragrafo três(3)</li>
+            <li>Paragrafo quarto(4)</li>
+            <li><span style="background-color: yellow;">Paragrafo quinto(5)</span></li>
+        </ul>
+
+        <ul class="num">
+            <li class="primo " >1</li>
+            <li class="primo">2</li>
+            <li class="primo">3</li>
+            <li class="num">4</li>
+            <li class="primo">5</li>
+            <li class="num">6</li>
+            <li class="primo">7</li>
+            <li class="num">8</li>
+            <li class="num">9</li>
+            <li class="num">10</li>
+            <li class="primo">11</li>
+            
+        </ul>
+
+        <ul id="aux">
+            <li class="primo">1</li>
+            <li class="primo par pwr2">2</li>
+            <li class="primo impar mult3">3</li>
+            <li class="num par pwr2">4</li>
+            <li class="primo impar">5</li>
+            <li class="num par mult3">6</li>
+            <li class="primo impar">7</li>
+            <li class="num par pwr2">8</li>
+            <li class="num impar mult3">9</li>
+            <li class="num par">10</li>
+                        <li class="primo impar">11</li>
+        </ul>
+
+
+        <!--inicio de Scrip -->
+        <script>
+        // este é comentário em JS
+            const  k = document.querySelector('#aux')
+            for (let index = 1; index <= 10; index++) {
+            const p = document.createElement('div');
+            p.innerHTML = index;
+            k.appendChild(p);
+
+            }        
+        </script>
+        
+    </body>
+</html>    
